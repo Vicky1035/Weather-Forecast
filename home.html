@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+  </head>
+  <body>
+
+   
+
+    <div class="box">
+      <form  role="search">
+        <input id="city"  type="search" placeholder="Weather" aria-label="Search">
+        <button type="submit" id="submit">Search</button>
+      </form>
+
+
+      <div class="wave -one"></div>
+      <div class="wave -two"></div>
+      <div class="wave -three"></div>
+
+      <div id="weathercon">
+        <i class="fas fa-sun" style="color: #eccc68"></i>
+      </div>
+
+      <div class="info">
+        <h2 class="location">
+          
+          <i  class="fas fa-street-view" style="color: #fff"> <span id="cityName"></span></i>
+          <div > <span id="temp"></span>&deg;C</div>
+
+        </h2>
+
+
+        <p id="date">
+     
+          <span id="day"></span>  |  
+          <span id="month"></span> <span id="din"></span>  | 
+          <span id="hour"></span>:<span id="minute"></span> <span id="ampm"></span> 
+        </p>
+
+
+        <h1 class="temp"></h1>
+        <h3 class="tempmin_max">Min <span id="min_temp"> </span>&deg;C | Max<span id="max_temp"></span>&deg;C
+        </h3>
+        <h3 class="tempmin_max"> Wind <span id="wind_speed"></span> Km/h</h3>
+      </div>
+    </div>
+
+
+
+
+<!-- 
+ //  <script src="WeatherAppNodejs/my.js"></script> -->
+   <script src="index.js"></script>
+  </body>
+</html>
